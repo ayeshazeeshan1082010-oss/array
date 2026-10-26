@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array & object</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+    h3 {
+        color: #333;
+        background-color: white;
+        padding: 10px;
+        border-left: 4px solid steelblue;
+    }
+
+    pre {
+        background-color: #e0e0e0;
+        padding: 15px;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+</style>
+<body>
+    <!-- Question num 1 -->
+    <h3>Q1. Create an array of five numbers and print all elements.</h3>
+    <p>
+        <pre>
+               let num = [1, 2, 3, 4, 5]
+               console.log(num)
+        </pre>
+    </p>
+
+    <!-- Question num 2 -->
+    <h3>Q2. Create an array of three fruits and print the first and last elements.</h3>
+    <p>
+        <pre>
+               let friuts = ["apple", "grapes", "banana"]
+               console.log(friuts[0]);
+               console.log(friuts[2]);
+        </pre>
+    </p>
+
+    <!-- Question 3 -->
+    <h3>Q3. Add "Mango" to the end of an array using push().</h3>
+    <p>
+        <pre>
+               let anotherFruit = ["kiwi", "strawberry"]
+               anotherFruit.push("mango")
+               console.log(anotherFruit);            
+        </pre>
+    </p>
+
+    <!-- Question 4 -->
+    <h3>Q4. Find the length of the given array.</h3>
+    <p>
+        <pre>
+               let numLength = [10, 20, 30, 40, 50]
+               console.log(numLength.length);
+        </pre>
+    </p>
+
+    <!-- Question 5 -->
+    <h3>Q5. Write a function that prints "Hello World".</h3>
+    <p>
+        <pre>
+               function msg (){
+               console.log("Hello World")
+               }
+               msg()
+        </pre>
+    </p>
+
+
+    <!-- Question 6 -->
+    <h3>Q6. Write a function that takes two numbers as parameters and prints their sum.</h3>
+    <p>
+        <pre>
+               function sum (a, b) {
+               console.log(a + b)
+               } 
+               sum(25, 35)
+        </pre>
+    </p>
+
+
+    <!-- Question 7 -->
+    <h3>Q7. Write a function that takes a number and returns its square.</h3>
+    <p>
+        <pre>
+               function square (num) {
+                return num * num;
+               }
+               console.log(square(4));
+        </pre>
+    </p>
+
+    <!-- Question 8 -->
+    <h3>Q8. Write a function that checks whether a number is even or odd.</h3>
+    <p>
+        <pre>
+               function evenOdd(num) {
+                if (num % 2 === 0) {
+                    console.log("Even number");
+                }
+                else{
+                    console.log("Odd number");
+        
+                }
+               }
+               evenOdd(8)
+        </pre>
+    </p>
+
+    <!-- Question 9 -->
+    <h3>Q9. Write a function to find the largest of two numbers.</h3>
+    <p>
+        <pre>
+               function findLargest(a, b) {
+                if (a > b) {
+                    console.log("a")
+                }
+                else if (b > a) {
+                     console.log("b");
+                } 
+                else {
+                     console.log("Both values are equal");
+                }
+               }
+               findLargest(9, 8)
+        </pre>
+    </p>
+
+
+    <!-- Question 10 -->
+    <h3>Q10. Write a function that takes a name as an argument and prints a welcome message.</h3>
+    <p>
+        <pre>
+               function greeting(name) {
+                console.log("Welcome " + name)
+               }
+               greeting("Ayesha")
+        </pre>
+    </p>
+
+
+    <!-- Question 11 -->
+    <h3>Q11. Create a student object with name, age, and class properties. Print all three properties</h3>
+    <p>
+        <pre>
+               let student = {
+                name: "Ayesha",
+                age : 17,
+                class : "Intermediate"
+               }
+               console.log(student.name)
+               console.log(student.age)
+               console.log(student.class);
+
+        </pre>
+    </p>
+
+    <!-- Question 12 -->
+    <h3>Q12. Create a car object with brand, model, and color properties. Print the car's brand.</h3>
+    <p>
+        <pre>
+               let car = {
+                brand: "BMW",
+                model : "m5",
+                color : "Black"
+               }
+               console.log(car.brand);
+        </pre>
+    </p>
+
+    <!-- Question 13 -->
+    <h3>Q13. Update the age of the following student object to 20 and print it.</h3>
+    <p>
+        <pre>
+               let students = {
+               name: "Ali",
+               age: 18
+               };
+               students.age = 20
+               console.log(students.age)
+        </pre>
+    </p>
+
+    <!-- Question 14 -->
+    <h3>Q14. Create a student object with name and marks properties. Write a function that prints the student's name and marks.</h3>
+    <p>
+        <pre>
+               let student2={
+                name : "Ali",
+                marks : 455
+               }
+
+               function stuDetails(student2){
+                console.log("Name: " + student2.name)
+                console.log("Marks: " + student2.marks);
+                }
+                stuDetails(student2)
+        </pre>
+    </p>
+<script>
+    // answer 1
+   let num = [10, 20, 30, 40, 50]
+    console.log(num);
+
+    // answer 2
+   let friuts = ["apple", "grapes", "banana"]
+   console.log(friuts[0]);
+   console.log(friuts[2]);
+
+    // answer 3
+   let anotherFruit = ["kiwi", "strawberry"]
+   anotherFruit.push("mango")
+   console.log(anotherFruit);
+
+    // answer 4
+   let numLength = [10, 20, 30, 40, 50]
+   console.log(numLength.length);
+   
+
+    // 5 answer
+   function msg (){
+   console.log("Hello World")
+   }
+   msg()
+
+   // 6 answer
+   function sum (a, b) {
+    console.log(a + b)
+   } 
+   sum(25, 35)
+
+   // 7 answer
+   function square (num) {
+    return num * num;
+   }
+   console.log(square(4));
+
+   // 8 answer
+   function evenOdd(num) {
+    if (num % 2 === 0) {
+        console.log("Even number");
+    }
+    else{
+        console.log("Odd number");
+        
+    }
+   }
+   evenOdd(8)
+
+   // 9 answer
+   function findLargest(a, b) {
+    if (a > b) {
+        console.log("a")
+    }
+    else if (b > a) {
+         console.log("b");
+    } 
+    else {
+         console.log("Both values are equal");
+    }
+   }
+   findLargest(9, 8)
+
+   // 10 answer
+   function greeting(name) {
+    console.log("Welcome " + name)
+   }
+   greeting("Ayesha")
+
+   // 11 answer
+   let student = {
+    name: "Ayesha",
+    age : 17,
+    class : "Intermediate"
+   }
+   console.log(student.name)
+   console.log(student.age)
+   console.log(student.class);
+
+   // 12 answer
+   let car = {
+    brand: "BMW",
+    model : "m5",
+    color : "Black"
+   }
+   console.log(car.brand);
+
+   // 13 answer
+    let students = {
+    name: "Ali",
+    age: 18
+    };
+   students.age = 20
+   console.log(students.age)
+
+   // 14 answer
+   let student2={
+    name : "Ali",
+    marks : 455
+   }
+
+   function stuDetails(student2){
+    console.log("Name: " + student2.name)
+    console.log("Marks: " + student2.marks);
+    }
+    stuDetails(student2)
+</script>
+</body>
+</html>
